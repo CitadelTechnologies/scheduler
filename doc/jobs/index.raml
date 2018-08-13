@@ -1,0 +1,34 @@
+#%RAML 1.0
+title: scheduler API microservice
+version: v1
+mediaType: application/json
+types:
+    Job: !include job.raml
+
+/jobs:
+    get:
+        description: Get a list of all scheduled jobs
+        responses:
+            200:
+                body:
+                    application/json:
+                        type: Job[]
+                        example: !include jobs.sample
+    post:
+        description: Create a new job and schedule it
+        body:
+            application/json:
+                type: Job
+        responses:
+            201:
+                body:
+                    application/json:
+                        type: Job
+    /{id}:
+        get:
+            description: Get a Job by its ID
+            responses:
+                200:
+                    body:
+                        application/json:
+                            type: Job

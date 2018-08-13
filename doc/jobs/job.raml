@@ -1,0 +1,22 @@
+#%RAML 1.0 DataType
+type: object
+properties:
+    id:
+        type: string
+        description: 'Unique identifier for the job'
+    method:
+        type: string
+        description: 'HTTP verb for the call'
+    url:
+        type: string
+        description: 'HTTP call destination'
+    executed_at:
+        type: string
+        description: 'Date to perform the call'
+example: |
+    {
+        "id": "task-125",
+        "method": "PUT",
+        "url" : "http://my_app/jobs/125/apply",
+        "executed_at": "2018-04-18T18:00:00Z"
+    }

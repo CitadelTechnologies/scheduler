@@ -1,0 +1,6 @@
+{
+    "id" : "task-125",
+    "method": "PUT",
+    "url" : "http://my_app/jobs/125/apply",
+    "executed_at": "2018-04-18T15:00:00Z"
+}

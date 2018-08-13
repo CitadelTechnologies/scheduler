@@ -1,0 +1,20 @@
+[
+    {
+        "id": "vote-12",
+        "method": "PATCH",
+        "url": "http://my_app/votes/12/close",
+        "executed_at": "2018-04-18T15:00:00Z"
+    },
+    {
+        "id": "job-125",
+        "method": "PUT",
+        "url": "http://my_app/jobs/125/apply",
+        "executed_at": "2018-04-18T15:00:00Z"
+    },
+    {
+        "id": "reindex-8",
+        "method": "GET",
+        "url": "http://my_app/documents/reindex",
+        "executed_at": "2018-04-18T15:00:00Z"
+    }
+]
