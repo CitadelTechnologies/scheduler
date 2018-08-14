@@ -31,3 +31,9 @@ func GetJobsAction(w http.ResponseWriter, r *http.Request) {
     }
     server.SendJsonResponse(w, 200, jobs)
 }
+
+func DeleteJobAction(w http.ResponseWriter, r *http.Request) {
+    Scheduling.RemoveJob(mux.Vars(r)["id"])
+    w.WriteHeader(204)
+    w.Write([]byte(""))
+}

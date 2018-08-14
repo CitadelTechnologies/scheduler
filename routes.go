@@ -59,4 +59,10 @@ var routes = Routes{
 		"/jobs/{id}",
 		scheduler.GetJobAction,
 	},
+	Route{
+		"Delete Job",
+		"DELETE",
+		"/jobs/{id}",
+		scheduler.DeleteJobAction,
+	},
 }
